@@ -1,0 +1,1 @@
+whisper-large-v2-hindi-for-yes-no-100steps

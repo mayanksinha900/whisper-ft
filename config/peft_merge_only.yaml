@@ -1,0 +1,6 @@
+model_config:
+  # model path take precedence over model name 
+  model_name: "openai/whisper-large-v2"
+  model_path: ""
+training_params:
+  output_model: "whisper-large-v2-hindi-for-yes-no-100steps"

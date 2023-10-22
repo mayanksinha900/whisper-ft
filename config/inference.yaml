@@ -1,0 +1,7 @@
+model: "models/whisper-large-v2-hindi-for-yes-no-100steps/ct2_optimized"
+device: "cuda"
+labse: "LaBSE"
+compute_type: "bfloat16"
+audio_path: "data/mg"
+sr: 24000
+task: "translate"

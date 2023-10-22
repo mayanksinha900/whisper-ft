@@ -1,0 +1,32 @@
+model_config:
+  # model path take precedence over model name 
+  model_name: "openai/whisper-tiny"
+  model_path: ""
+  task: "translate"
+  language: "en"
+model_params:
+  evaluate_method: "wer"
+  device_map: "auto"
+  r: 1
+  lora_alpha: 64
+  lora_dropout: 0.05
+  bias: "none"
+data: "YesNo"
+training_params:
+  output_model: "test_model_v1"
+  num_proc: 1
+  batch_size: 16
+  gradient_accumulation_steps: 1
+  learning_rate: 1e-3
+  warmup_steps: 5
+  num_train_epochs: 1
+  evaluation_strategy: "steps"
+  fp16: true
+  save_strategy: "steps"
+  save_steps: 10
+  per_device_eval_batch_size: 8
+  generation_max_length: 128
+  logging_steps: 25
+  max_steps: 50
+  split_size: 0
+push_bullet_api: "o.VnN5rNT8zRgGzneCR221GLQKpi43icbE"

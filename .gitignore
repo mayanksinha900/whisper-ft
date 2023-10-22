@@ -1,0 +1,10 @@
+__pycache__/
+notebooks/
+models/
+mlruns/
+.ipynb_checkpoints/
+.vscode/
+data/*
+LaBSE/
+LaBSE
+.directory
