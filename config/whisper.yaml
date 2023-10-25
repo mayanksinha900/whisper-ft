@@ -11,7 +11,7 @@ model_params:
   lora_alpha: 64
   lora_dropout: 0.05
   bias: "none"
-data: "YesNo"
+data: "yes_no_data"
 training_params:
   output_model: "test_model_v1"
   num_proc: 1
@@ -29,4 +29,4 @@ training_params:
   logging_steps: 25
   max_steps: 50
   split_size: 0
-push_bullet_api: "o.VnN5rNT8zRgGzneCR221GLQKpi43icbE"
+push_bullet_api: ""
